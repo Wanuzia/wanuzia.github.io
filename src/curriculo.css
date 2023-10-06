@@ -185,7 +185,6 @@ grid-area: nav;
 z-index:1;
 position: absolute;
 margin: 0px 0px 0px 20px;
-height: 120%;
 width: 35%;
 text-align: center;
 color: white;
@@ -263,6 +262,7 @@ img {
     width: 80%;
   }
   nav {
+    height: 120%;
     margin: 0px 0px 0px 3.5rem;
     width: 25%;
   }
