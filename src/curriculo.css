@@ -1,0 +1,305 @@
+body {
+    margin: 0;
+  }
+  /* 
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin: 5px 0;
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .job-title {
+    font-weight: bold;
+  }
+  
+  .date {
+    color: #888;
+    font-style: italic;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  {# <style>
+
+    .about {
+      display: flex;
+      flex-direction: column;
+      background-color: red;
+      position: relative;
+      align-items: center;
+    }
+    body {
+      margin: 0;
+    }
+    main {
+      column-count: 2;
+      position: relative;
+    }
+    .profile {
+      background-color: green;
+      flex-direction: column;
+      position: absolute;
+      width: 40%;
+    }
+
+    .content-container {
+      width: 55%;
+    }
+  </style>
+</head>
+<body>
+  <header class="about">
+    <h1>Wanuzia Braga</h1>
+    <p>Desenvolvedora web</p>
+  </header>
+  <main>
+    <section class="profile">
+      <figure>
+        <img
+          src="https://avatars.githubusercontent.com/u/98324557?v=4"
+          alt="foto de perfil de uma mulher negra."
+        />
+      </figure>
+      <div>
+        <h3>PROFILE</h3>
+        <p>Desenvolvedora web full stack</p>
+        <p>I consider myself a responsible and orderly person.</p>
+        <p>
+          I am doing this to share my experience and too improve my technicals
+          and softly skills.
+        </p>
+      </div>
+      <div>
+        <h3>CONTACT ME</h3>
+        <span>Fone</span>
+        <span>email</span>
+        <span>address</span>
+      </div>
+    </section>
+
+    <section class="content-container">
+      <div id="skills">
+        <h3>Habilidades</h3>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Responsive Web Design</li>
+          <li>Git</li>
+        </ul>
+      </div>
+
+      <div id="experiences">
+        <h3>Experiência Profissional</h3>
+        <ul>
+          <li>
+            <h3>[Nome da Empresa]</h3>
+            <p class="job-title">Desenvolvedor Web</p>
+            <p class="date">[Data de início] - [Data de término]</p>
+            <ul>
+              <li>[Responsabilidades e conquistas]</li>
+              <li>[Responsabilidades e conquistas]</li>
+            </ul>
+          </li>
+          <li>
+            <h3>[Nome da Empresa]</h3>
+            <p class="job-title">Produtor de Eventos</p>
+            <p class="date">[Data de início] - [Data de término]</p>
+            <ul>
+              <li>[Responsabilidades e conquistas]</li>
+              <li>[Responsabilidades e conquistas]</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div id="education">
+        <h3>Educação</h3>
+        <ul>
+          <li>
+            <h3>[Nome da Instituição]</h3>
+            <p class="degree">Bacharelado em Ciência da Computação</p>
+            <p class="date">[Data de conclusão]</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+</body> #} */
+:root {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+#page {
+display: grid;
+width: 100%;
+height: 100%;
+grid-template:
+[header-left] "head head" 30px [header-right]
+[main-left] "nav  main" 1fr [main-right]
+[footer-left] "nav  foot" 30px [footer-right]
+/ 120px 1fr;
+}
+
+header {
+background-color: #f2bc99;
+grid-area: head;
+height: 12rem;
+position: relative;
+margin-top: 1.25rem;
+}
+
+.name {
+  text-align: center;
+  margin-left: 45%;
+  margin-top: 4.5rem;
+}
+nav {
+background-color: #5da89e;
+grid-area: nav;
+z-index:1;
+position: absolute;
+margin: 0px 0px 0px 20px;
+height: 120%;
+width: 35%;
+text-align: center;
+color: white;
+padding: 16px 10px 0;
+}
+
+.contact {
+margin-top: 4rem;
+}
+
+main {
+grid-area: main;
+}
+
+.contents {
+  display: flex;
+  align-items: center;
+  margin: 12rem 0 0 6rem;
+}
+
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+/* footer {
+background-color: red;
+grid-area: foot;
+} */
+figure {
+display: table-cell;
+padding-top: 2rem;
+}
+img {
+  border-radius: 50%;
+  width: 100%;
+  /* width: 80%; */
+  border: 2px solid white;
+  margin-left: 0px;
+}
+.profile {
+  margin-top: 4rem;
+}
+
+.arrow {
+    position: absolute;
+    padding: 0.4rem;
+    box-shadow: 2px -2px 0 1px #5da89e inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    transform: rotate(-135deg);
+    left: 181px;
+}
+@media screen and (min-width: 480px) {
+  .contents {
+    margin: 12rem 0 0 12rem;
+  }
+
+  .arrow {
+    left: 260px;
+  }
+}
+/*  tablet  */
+@media screen and (min-width: 768px) {
+  main {
+    padding-left: 10%;
+  }
+  figure {
+    padding-top: 1rem;
+  }
+  img {
+    border: 5px solid white;
+    margin-left: 0;
+    width: 80%;
+  }
+  nav {
+    margin: 0px 0px 0px 3.5rem;
+    width: 25%;
+  }
+  .name {
+    margin-left: 8%;
+  }
+  .profile {
+    margin-top: 2rem;
+  }
+  .contents {
+    margin: 12rem 0 0 9rem;
+  }
+  .arrow {
+    left: 290px;
+  }
+}
+@media screen and (min-width: 992px) {
+  img {
+    width: 70%;
+  }
+  .name {
+    margin-left: 0;
+  }
+  .contents {
+    margin: 12rem 0 0 12rem;
+  }
+  .arrow {
+    left: 350px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contents {
+    margin: 12rem 0 0 20rem;
+    font-size: 1.5rem;
+  }
+  .arrow {
+    left: 550px;
+  }
+
+}
