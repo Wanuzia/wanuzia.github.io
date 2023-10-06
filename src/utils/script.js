@@ -1,27 +1,14 @@
-// let time = 2000,
-//   currentItemIndex = 0,
-//   items = document.querySelectorAll(".item-description.item");
-// max = items.length;
-
-// async function nextItem() {
-//    items[currentItemIndex].classList.add("selected")
-//     currentItemIndex++;
-//     if (currentItemIndex >= max) {
-//         currentItemIndex = 0;
-//     }
-//     items[currentItemIndex].classList.remove("selected")
-// }
-
-// function start() {
-//     setInterval(() => {
-//     nextItem()
-// }, time)
-// }
-
-// window.addEventListener("load", start)
-
 const data = {
     transition: [
+      {
+        title: "Programa de Formação Elas Na Tech",
+        link: "",
+        linkTitle: "Elas na Tech",
+        description:
+          "Programa de Formação Elas na Tech, onde tive oportunidade de me sentir parte de uma comunidade de mulheres negras que estão em busca de conhecimento mais amplo no mundo da tecnologia. Nesta formação foram abordados? HTML, CSS, JAVASCRIPT, PYTHON, GIT e GITHUB. ",
+        image: "",
+        class: "",
+      },
       {
         title: "Ciclo formativo O Poder do Futuro",
         link: "",
@@ -52,11 +39,20 @@ const data = {
     ],
     projects: [
       {
-        title: "Blog Arte, cultura e Ciência - Wordpress",
-        link: "https://arteculturaeciencia.wordpress.com/",
-        linkTitle: "Blog feito no Wordpress",
+        title: "Menu",
+        link: "https://menu-by-wanuzia-elasnatech.netlify.app/",
+        linkTitle: "Menu by Wanuzia",
         description:
-          "Iniciado em 2015, quando estava em Moçambique. Durante a pandemia, devido ao isolamento social que me dediquei mais à criação de conteúdo para o blog. Então,na tentativa de mudar a exibição do conteúdo na tela, comecei a me interessar por programação, sem saber que se tratava de programação na época 😁. Atualmente tenho procurado entender mais o wordpress, utilizando HTML e demais ferramentas disponíveis para estilizar as postagens.",
+          "Menu feito apenas com HTML e CSS, com design responsivo, desafio da formação em desenvolvimento Web do Programa Elas na Tech.",
+        image: "",
+        class: "",
+      },
+      {
+        title: "Player de Música",
+        link: "https://player-musica-olive.vercel.app/",
+        linkTitle: "Player by Wanuzia",
+        description:
+          "Player de Música - Desafio 1 #boracodar - Rocketseat. Desenvolvido em React. O Desafio 1 consistia em replicar o layout do Figma. Extras: o site é funcional, possui 15 músicas que podem ser ouvidas em sequências, com autoplay. Deploy usando surge.sh.",
         image: "",
         class: "",
       },
@@ -75,6 +71,15 @@ const data = {
         linkTitle: "The Movie DB by Wanuzia",
         description:
           "Projeto Frontend com React que consistiu em consumir a API do themoviedb e criar o frontend com base em um layout do Figma. Deploy realizado com surge.sh. Pretendo retomar o desenvolvimento deste projeto, adicionando novas funcionalidades e melhorando detalhes do layout.",
+        image: "",
+        class: "",
+      },
+      {
+        title: "Blog Arte, cultura e Ciência - Wordpress",
+        link: "https://arteculturaeciencia.wordpress.com/",
+        linkTitle: "Blog feito no Wordpress",
+        description:
+          "Iniciado em 2015, quando estava em Moçambique. Durante a pandemia, devido ao isolamento social que me dediquei mais à criação de conteúdo para o blog. Então,na tentativa de mudar a exibição do conteúdo na tela, comecei a me interessar por programação, sem saber que se tratava de programação na época 😁. Atualmente tenho procurado entender mais o wordpress, utilizando HTML e demais ferramentas disponíveis para estilizar as postagens.",
         image: "",
         class: "",
       },
