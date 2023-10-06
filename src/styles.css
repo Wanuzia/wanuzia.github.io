@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-family: 'Comfortaa', 'cursive';
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    justify-content: inherit;
+    background-color: #C44B03;
+    position: fixed;
+    width: -webkit-fill-available;
+    z-index: 1;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+  
+}
+
+.nav_anchor {
+    color: #FFFFFF;
+}
+li {
+    margin: 0.25rem;
+    cursor: pointer;
+}
+li:hover {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+p {
+    line-height: 1.5rem;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin: 1rem;
+    padding: 2rem 0;
+}
+
+#profile-pic {
+    width: 9.4rem;
+    height: 9.4rem;        
+}
+
+#profile-pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.profile-details {
+    text-align: center;
+    line-height: 3rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+h1 {
+    color: #C44B03;
+    font-size: 2.025rem;
+}
+
+span {
+    color: #C5C0C0;
+    font-size: 1.5rem;
+
+}
+
+.about {
+    width: 100%; 
+    line-height: 1.5rem;
+}
+.initial {
+    position: relative;
+    margin-top: 8rem;
+}
+footer{
+    justify-content: flex-start;
+    background-color: #C44B03; 
+    padding: 1rem;
+    
+}
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+}
+.contacts-list a {
+    color: #FFFFFF;
+}
+.contact-item {
+    padding: 0.5rem;
+}
+.contact-item:hover {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    }
+    @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+i {
+    width: 1.5rem;
+    height: 1.5rem;
+    filter: invert(1);
+    margin: 0.5rem;
+}
+.category-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+}
+.button-link {
+    cursor: pointer;
+}
+.category-section>article {
+    padding: 0;
+}
+.section-item {
+    align-self: flex-start;
+}
+.carousel {
+    text-align: justify;
+}
+.background-gray {
+    background-color: #E5E5E5;
+}
+h4 {
+    color: #E74F04;
+    font-size: 1.5rem;
+}
+.category-section.projects {
+
+}
+.item-details {
+    line-height: 3rem;
+    margin-top: 1.5rem;
+}
+.item-title {
+    color: #828282;
+}
+.item-link:hover {
+    cursor: pointer;
+}
+/* o carrossel será desenvolvido */
+.description-container {
+    /* position: absolute; */
+
+}
+.carrossel-item {
+    margin: 10px 0;
+  }
+
+.selected {
+    /* color: #C44B03;
+    background-color: blue;
+    opacity: 1; */
+}
+a {
+    cursor: pointer;
+    color: tomato;
+}
+
+.animation {
+    margin: 0.5rem;
+}
+
+.animated-text {
+    padding-bottom: 2px;
+}
+.letter {
+    color: white;
+    opacity: 0;
+    transition: color 0.8s infinite;
+}
+.active {
+    font-size: 2rem;
+    opacity: 1;
+    color: white;
+    transition: color 0.8s ease-in-out;
+ }
+.item-link.disabled {
+    cursor: revert;
+}
+.item {
+    /* position: absolute;
+    /* width: 100%;
+    height: 100%; */
+    /* transition: opacity 800ms; */
+}
+@media screen and (min-width: 700px) {
+    ul {
+    width: 30rem;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+    header {
+        padding: 1rem;
+    }
+    .about {
+        width: 70%;
+    }
+    .contacts-list {
+        margin: 2rem 0;
+    }
+    article {
+        padding: 3rem 0.8rem   ;
+    }
+    .carousel {
+        margin: 1rem 100px;
+    }
+    .contacts-list {
+        width: 50%;
+    }
+    .contact-item {
+        margin: 0.7rem 0 0 1.4rem;
+    }
+    .animation {
+        margin: 0.5rem 0 0 7rem;
+    }
+    .active {
+        font-size: 3rem;
+    }
+}
