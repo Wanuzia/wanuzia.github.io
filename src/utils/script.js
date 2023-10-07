@@ -1,7 +1,7 @@
 const data = {
     transition: [
       {
-        title: "Programa de Formação Elas Na Tech - 2023",
+        title: "Programa de Formação Elas Na Tech - 2023  ",
         link: "",
         linkTitle: "Elas na Tech",
         description:
@@ -167,9 +167,7 @@ const data = {
     descriptionContainer.appendChild(newDescription)
     // descriptionContainer.appendChild(description2)
     descriptionContainer.appendChild(carrosselTeste);
-    descriptionContainer.appendChild(btnPrev);
-    descriptionContainer.appendChild(btnNext);
-  
+
     itemDetails.appendChild(newTitle);
     itemDetails.appendChild(button);
   
