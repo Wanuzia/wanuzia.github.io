@@ -1,7 +1,7 @@
 const data = {
     transition: [
       {
-        title: "Programa de Formação Elas Na Tech",
+        title: "Programa de Formação Elas Na Tech - 2023",
         link: "",
         linkTitle: "Elas na Tech",
         description:
@@ -10,7 +10,7 @@ const data = {
         class: "",
       },
       {
-        title: "Ciclo formativo O Poder do Futuro",
+        title: "Ciclo formativo O Poder do Futuro - 2023",
         link: "",
         linkTitle: "Pretalab Olabi",
         description:
@@ -19,11 +19,11 @@ const data = {
         class: "",
       },
       {
-        title: "Programa Desenvolve",
+        title: "Programa Desenvolve - 2022",
         link: "",
         linkTitle: "Grupo Boticário",
         description:
-          "Programa Desenvolve edição 2022, de janeiro a outubro de 2023. Foi através da seleção para estudar a Trilha FullStack que dei os primeiros passos na programação. Fiz aulas na Alura e na Labenu, durante o período do Programa. Contratada para exercer o cargo de Developer I, sendo o marco da minha inserção no mercado. Principais aprendizados: HTML, CSS, JAVASCRIPT, REACT, NODE, SQL, trabalho em grupo e desenvolvimento de carreira.",
+          "Programa Desenvolve edição 2022, de janeiro a outubro de 2022. Foi através da seleção para estudar a Trilha FullStack que dei os primeiros passos na programação. Fiz aulas na Alura e na Labenu, durante o período do Programa. Contratada para exercer o cargo de Developer I, sendo o marco da minha inserção no mercado. Principais aprendizados: HTML, CSS, JAVASCRIPT, REACT, NODE, SQL, trabalho em grupo e desenvolvimento de carreira.",
         image: "",
         class: "",
       },
