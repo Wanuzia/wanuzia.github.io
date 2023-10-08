@@ -276,7 +276,7 @@ img {
     margin: 12rem 0 0 9rem;
   }
   .arrow {
-    left: 290px;
+    left: 19.5rem;
   }
 }
 @media screen and (min-width: 992px) {
@@ -299,7 +299,10 @@ img {
     font-size: 1.5rem;
   }
   .arrow {
-    left: 550px;
+    left: 30rem;
   }
 
+}
+.hidden {
+  display: none;
 }
