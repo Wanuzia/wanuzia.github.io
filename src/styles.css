@@ -54,7 +54,7 @@ article {
     align-items: center;
     text-align: justify;
     margin: 1rem;
-    padding: 2rem 0;
+    padding: 3rem 0;
 }
 
 #profile-pic {
@@ -212,6 +212,7 @@ a {
     height: 100%; */
     /* transition: opacity 800ms; */
 }
+
 @media screen and (min-width: 700px) {
     ul {
     width: 30rem;
