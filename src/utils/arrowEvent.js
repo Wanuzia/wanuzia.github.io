@@ -17,8 +17,6 @@ const data =[
 }
 ]
 
-
-
 function arrowEvent(id, className) {
     const arrowSpan = document.querySelector(id);
     const paragraphSkill = document.querySelector(className);

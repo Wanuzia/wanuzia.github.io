@@ -202,7 +202,7 @@ grid-area: main;
 .contents {
   display: flex;
   align-items: center;
-  margin: 12rem 0 0 6rem;
+  margin: 12rem 0 0 5rem;
 }
 
 ul {
@@ -215,11 +215,11 @@ li {
 background-color: red;
 grid-area: foot;
 } */
-figure {
+.profile-figure {
 display: table-cell;
 padding-top: 2rem;
 }
-img {
+.profile-picture {
   border-radius: 50%;
   width: 100%;
   /* width: 80%; */
@@ -239,6 +239,18 @@ img {
     transform: rotate(-135deg);
     left: 181px;
 }
+
+.course-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 0;
+  text-align: justify;
+}
+.course-figure{}
+.badge{
+  width: 6rem;
+}
 @media screen and (min-width: 480px) {
   .contents {
     margin: 12rem 0 0 12rem;
@@ -253,10 +265,10 @@ img {
   main {
     padding-left: 10%;
   }
-  figure {
+  .profile-figure {
     padding-top: 1rem;
   }
-  img {
+  .profile-picture {
     border: 5px solid white;
     margin-left: 0;
     width: 80%;
@@ -278,9 +290,12 @@ img {
   .arrow {
     left: 19.5rem;
   }
+  .course-item {
+    flex-direction: row;
+  }
 }
 @media screen and (min-width: 992px) {
-  img {
+  .profile-picture {
     width: 70%;
   }
   .name {
