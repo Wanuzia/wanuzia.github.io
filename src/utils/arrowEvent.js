@@ -12,6 +12,10 @@ const data =[
     className: '.computer-skills'
 },
 {
+    id:'#profesional',
+    className: '.profesional-experience'
+},
+{
     id:'#volunteer',
     className: '.volunteer-experience'
 }

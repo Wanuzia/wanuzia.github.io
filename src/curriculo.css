@@ -211,6 +211,9 @@ ul {
 li {
   list-style: none;
 }
+h5 {
+  cursor: pointer;
+}
 /* footer {
 background-color: red;
 grid-area: foot;
