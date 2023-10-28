@@ -75,6 +75,15 @@ const data = {
         class: "",
       },
       {
+        title: "Explorer - RocketSeat",
+        link: "https://wanuzia.github.io/explorer/",
+        linkTitle: "Desafios da Trilha Explorer",
+        description:
+          "Projetos de exercícios e desafios desenvolvidos durante a Trilha Explorer da RocketSeat.",
+        image: "",
+        class: "",
+      },
+      {
         title: "Blog Arte, cultura e Ciência - Wordpress",
         link: "https://arteculturaeciencia.wordpress.com/",
         linkTitle: "Blog feito no Wordpress",
