@@ -108,6 +108,7 @@ const data = {
     const itemLink = document.createElement("a");
     itemLink.classList.add("item-link");
     itemLink.classList.add("disabled");
+    itemLink.id="no-underline";
   
     const newDescription = document.createElement("p");
     newDescription.classList.add("item-description");
@@ -141,6 +142,7 @@ const data = {
       
     const itemLink = document.createElement("a");
     itemLink.classList.add("item-link");
+    itemLink.id="no-underline";
   
     const descriptionContainer = document.createElement("div")
     descriptionContainer.classList.add("item-container");

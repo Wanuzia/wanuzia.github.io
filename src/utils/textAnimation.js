@@ -1,13 +1,10 @@
 const hasText = true;
-const text = "Hello! ";
-const lettersArray = text.split("");
+const words = ["HTML ", "CSS ", "JavaScript ", "React ", "NodeJs "];
 let interval;
 
+let currentWordIndex = 0;
 let currentLetterIndex = 0;
-
-function changeColor(el) {
-  el.classList.add('active');
-}
+let lettersArray = words[currentWordIndex].split("");
 
 function renderLetters() {
   const animatedText = document.getElementById("animated-text");
@@ -28,11 +25,18 @@ function renderLetters() {
   animatedText.innerHTML = letterHtml;
   
   currentLetterIndex++;
-  if (currentLetterIndex > lettersArray.length - 1) clearInterval(interval);
+  if (currentLetterIndex > lettersArray.length -1) {
+    currentLetterIndex = 0;
+    currentWordIndex++;
+    if (currentWordIndex >= words.length) {
+      currentWordIndex = 0;
+    } 
+      lettersArray = words[currentWordIndex].split("");
+  }
 }
 
 if (hasText) {
   document.addEventListener("DOMContentLoaded", function(event) {
-    interval = setInterval(renderLetters, 100);
+    interval = setInterval(renderLetters, 200);
   });
 }

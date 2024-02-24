@@ -175,16 +175,16 @@ h4 {
     margin: 10px 0;
   }
 
-.selected {
-    /* color: #C44B03;
-    background-color: blue;
-    opacity: 1; */
-}
 a {
     cursor: pointer;
     color: tomato;
+    text-decoration: none;
 }
+.item-link a {
+    color: #C44B03;
+    text-decoration: none;
 
+}
 .animation {
     margin: 0.5rem;
 }
@@ -211,6 +211,9 @@ a {
     /* width: 100%;
     height: 100%; */
     /* transition: opacity 800ms; */
+}
+#no-underline {
+    text-decoration: none;
 }
 
 @media screen and (min-width: 700px) {
