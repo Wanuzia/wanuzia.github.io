@@ -1,12 +1,16 @@
+<<<<<<< HEAD
 # wanuzia.github.io
 Portfólio 
+=======
+# React + Vite
+>>>>>>> 3e846d1 (migrate react to root)
 
-## Stacks utilizadas
+Portfolio migrado de HTML e CSS para React + Vite.
 
-<p align='center'> <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank"> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /></a>
- <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank"><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />  </a>
- <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank"><img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" /></a>
- 
-|HTML|CSS|Javascript
-|-|-|-|
-|Para estruturar o layout da aplicação|Para estilização dos elementos|Deploy da aplicação|Adiciona funcionalidades|
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
