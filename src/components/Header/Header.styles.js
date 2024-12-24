@@ -3,11 +3,10 @@ import styled from 'styled-components';
 export const HeaderContainer = styled.header`
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #282c34;
+  background-color: darkslategrey ;
   color: white;
   font-size: 2rem;
+  padding: 5rem 0;
 `;
 
 export const AnimatedText = styled.div`
