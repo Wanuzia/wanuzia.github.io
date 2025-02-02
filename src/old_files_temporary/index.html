@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio com HTML, CSS e JavaScript, onde apresento um pouco da minha transição de carreira para o mercado de tecnologia e alguns de meus principais projetos desenvolvidos desde o início da minha jornada enquanto desenvolvedora web, de 2022 até a atualidade. Projeto foi entregue como requisito para conclusão do Ciclo Formativo O Poder do Futuro, PretaLab - Olabi, 2023."
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/drz2mebia/image/upload/v1678655918/mentoria-desenvolve/wanuzia-mentor_gjj3xa.jpg"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
+      data-auto-replace-svg="nest"
+    ></script>
+
+    <title>Portfolio by Wanuzia</title>
+  </head>
+  <body>
+    <header>
+      <div class="animation">
+        <h1 id="animated-text"></h1>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a id="no-underline" class="nav_anchor" href="#transicao">Transição de Carreira</a>
+          </li>
+          <li><a id="no-underline" class="nav_anchor" href="#projetos">Projetos</a></li>
+          <li><a id="no-underline" class="nav_anchor" href="curriculo.html">Currículo</a></li>
+          <li><a id="no-underline" class="nav_anchor" href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="initial" class="initial">
+        <article>
+          <div id="profile-pic">
+            <img 
+            src="https://res.cloudinary.com/dc8mp7dgl/image/upload/v1694183400/desenvolve/foto_wan_baqftf.jpg"
+            alt="foto de rosto de Wanuzia Braga, mulher negra sorrindo, com cabelos cacheados soltos na altura do ombro, veste blusa sem manga laranja."
+            />
+          </div>
+          <div class="profile-details">
+            <h1>Wanuzia Braga</h1>
+            <span>WEB Developer</span>
+          </div>
+          <div class="about">
+            <p>
+              Desde criança sou apaixonada pelas linguagens artísticas e, após
+              três décadas, percebo que programar também é uma maneira de se
+              expressar: partimos do conhecimento técnico, assim como acontece
+              em expressões artísticas como a dança, o cinema e a música, que
+              possuem suas técnicas específicas. Assim como as artes, ou pode
+              ser um diferencial devido a forma como se manifesta, por meio da
+              tecnologia é possível melhorar a qualidade de vida das pessoas,
+              promover inclusão social e da diversidade cultural, utilizando
+              algoritmos.👀
+            </p>
+          </div>
+        </article>
+      </section>
+      <section
+        id="transicao"
+        data-js="transition-section"
+        class="category-section background-gray"
+      >
+        <article>
+          <div class="section-item">
+            <h4>Transição de Carreira</h4>
+          </div>
+          <div class="carousel">
+            <div class="carrossel-container" id="transition-container"></div>
+          </div>
+        </article>
+      </section>
+      <section
+        id="projetos"
+        data-js="projects-section"
+        class="category-section projects"
+      >
+        <article>
+          <div class="section-item">
+            <h4>Projetos</h4>
+          </div>
+          <div class="carousel">
+            <div class="carrossel-container" id="projects-container"></div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer id="contato">
+      <div>
+        <div class="contacts-list">
+          <div class="contact-item">
+            <a
+              href="https://www.linkedin.com/in/wanuzia-braga/"
+              target="_blank"
+              id="no-underline"
+            >
+              <i class="fab fa-linkedin"></i>Wanuzia Braga
+            </a>
+          </div>
+          <div class="contact-item">
+            <a href="https://github.com/Wanuzia" target="_blank" id="no-underline">
+              <i class="fab fa-github-square"></i>Wanuzia
+            </a>
+          </div>
+          <div class="contact-item">
+            <a
+              href="https://arteculturaeciencia.wordpress.com/"
+              target="_blank"
+              id="no-underline"
+            >
+              <i class="fab fa-wordpress"></i>Arte, cultura e ciência
+            </a>
+          </div>
+        </div>
+        <a
+          id="no-underline"
+          href="#initial"
+          script="cursor: pointer; margin: 1rem; color: '#FFFFFF'"
+          >Top</a
+        >
+      </div>
+    </footer>
+    <script src="src/utils/textAnimation.js"></script>
+    <script src="src/utils/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio com HTML, CSS e JavaScript, onde apresento um pouco da minha transição de carreira para o mercado de tecnologia e alguns de meus principais projetos desenvolvidos desde o início da minha jornada enquanto desenvolvedora web, de 2022 até a atualidade. Projeto foi entregue como requisito para conclusão do Ciclo Formativo O Poder do Futuro, PretaLab - Olabi, 2023."
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/drz2mebia/image/upload/v1678655918/mentoria-desenvolve/wanuzia-mentor_gjj3xa.jpg"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.3/js/all.js"
+      data-auto-replace-svg="nest"
+    ></script>
+
+    <title>Portfolio by Wanuzia</title>
+  </head>
+  <body>
+    <header>
+      <div class="animation">
+        <h1 id="animated-text"></h1>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a id="no-underline" class="nav_anchor" href="#transicao">Transição de Carreira</a>
+          </li>
+          <li><a id="no-underline" class="nav_anchor" href="#projetos">Projetos</a></li>
+          <li><a id="no-underline" class="nav_anchor" href="curriculo.html">Currículo</a></li>
+          <li><a id="no-underline" class="nav_anchor" href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="initial" class="initial">
+        <article>
+          <div id="profile-pic">
+            <img 
+            src="https://res.cloudinary.com/dc8mp7dgl/image/upload/v1694183400/desenvolve/foto_wan_baqftf.jpg"
+            alt="foto de rosto de Wanuzia Braga, mulher negra sorrindo, com cabelos cacheados soltos na altura do ombro, veste blusa sem manga laranja."
+            />
+          </div>
+          <div class="profile-details">
+            <h1>Wanuzia Braga</h1>
+            <span>WEB Developer</span>
+          </div>
+          <div class="about">
+            <p>
+              Desde criança sou apaixonada pelas linguagens artísticas e, após
+              três décadas, percebo que programar também é uma maneira de se
+              expressar: partimos do conhecimento técnico, assim como acontece
+              em expressões artísticas como a dança, o cinema e a música, que
+              possuem suas técnicas específicas. Assim como as artes, ou pode
+              ser um diferencial devido a forma como se manifesta, por meio da
+              tecnologia é possível melhorar a qualidade de vida das pessoas,
+              promover inclusão social e da diversidade cultural, utilizando
+              algoritmos.👀
+            </p>
+          </div>
+        </article>
+      </section>
+      <section
+        id="transicao"
+        data-js="transition-section"
+        class="category-section background-gray"
+      >
+        <article>
+          <div class="section-item">
+            <h4>Transição de Carreira</h4>
+          </div>
+          <div class="carousel">
+            <div class="carrossel-container" id="transition-container"></div>
+          </div>
+        </article>
+      </section>
+      <section
+        id="projetos"
+        data-js="projects-section"
+        class="category-section projects"
+      >
+        <article>
+          <div class="section-item">
+            <h4>Projetos</h4>
+          </div>
+          <div class="carousel">
+            <div class="carrossel-container" id="projects-container"></div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer id="contato">
+      <div>
+        <div class="contacts-list">
+          <div class="contact-item">
+            <a
+              href="https://www.linkedin.com/in/wanuzia-braga/"
+              target="_blank"
+              id="no-underline"
+            >
+              <i class="fab fa-linkedin"></i>Wanuzia Braga
+            </a>
+          </div>
+          <div class="contact-item">
+            <a href="https://github.com/Wanuzia" target="_blank" id="no-underline">
+              <i class="fab fa-github-square"></i>Wanuzia
+            </a>
+          </div>
+          <div class="contact-item">
+            <a
+              href="https://arteculturaeciencia.wordpress.com/"
+              target="_blank"
+              id="no-underline"
+            >
+              <i class="fab fa-wordpress"></i>Arte, cultura e ciência
+            </a>
+          </div>
+        </div>
+        <a
+          id="no-underline"
+          href="#initial"
+          script="cursor: pointer; margin: 1rem; color: '#FFFFFF'"
+          >Top</a
+        >
+      </div>
+    </footer>
+    <script src="src/utils/textAnimation.js"></script>
+    <script src="src/utils/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
