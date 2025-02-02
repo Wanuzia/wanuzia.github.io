@@ -1,9 +1,10 @@
 import styled from 'styled-components';
+import theme from '../../utils/theme';
 
 export const HeaderContainer = styled.header`
   display: flex;
   justify-content: center;
-  background-color: darkslategrey ;
+  background-color: ${theme.palette.primary.main}; ;
   color: white;
   font-size: 2rem;
   padding: 5rem 0;

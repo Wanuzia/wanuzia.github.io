@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState, useEffect } from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -13,12 +13,9 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom';
 
 interface Props {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
   window?: () => Window;
 }
 
@@ -27,8 +24,17 @@ const navItems = ['Home', 'About', 'Contact'];
 
 export default function DrawerAppBar(props: Props) {
   const { window } = props;
-  const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [time, setTime] = useState(new Date());
 
+    useEffect(() => {
+      const timer = setInterval(() => {
+        setTime(new Date());
+      }, 1000);
+  
+      return () => clearInterval(timer);
+    }, []);
+  
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
@@ -36,13 +42,13 @@ export default function DrawerAppBar(props: Props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
+        Menu
       </Typography>
       <Divider />
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
+            <ListItemButton component={Link} to={ item === 'Home' ? '/' : `/${item.toLowerCase()}`} sx={{ textAlign: 'center' }}>
               <ListItemText primary={item} />
             </ListItemButton>
           </ListItem>
@@ -56,8 +62,8 @@ export default function DrawerAppBar(props: Props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav">
-        <Toolbar background-color="#ff00ff">
+      <AppBar component="nav" position="fixed" sx={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', padding: '0 20px' }}>
+        <Toolbar>
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -67,13 +73,6 @@ export default function DrawerAppBar(props: Props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-          >
-            MUI
-          </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
               <Button key={item} sx={{ color: '#fff' }}>
@@ -82,6 +81,7 @@ export default function DrawerAppBar(props: Props) {
             ))}
           </Box>
         </Toolbar>
+        <Typography variant="h6">Hora: {time.toLocaleTimeString()}</Typography>
       </AppBar>
       <nav>
         <Drawer
@@ -100,20 +100,6 @@ export default function DrawerAppBar(props: Props) {
           {drawer}
         </Drawer>
       </nav>
-      <Box component="main" sx={{ p: 3 }}>
-        <Toolbar />
-        <Typography>
-              Desde criança sou apaixonada pelas linguagens artísticas e, após
-              três décadas, percebo que programar também é uma maneira de se
-              expressar: partimos do conhecimento técnico, assim como acontece
-              em expressões artísticas como a dança, o cinema e a música, que
-              possuem suas técnicas específicas. Assim como as artes, ou pode
-              ser um diferencial devido a forma como se manifesta, por meio da
-              tecnologia é possível melhorar a qualidade de vida das pessoas,
-              promover inclusão social e da diversidade cultural, utilizando
-              algoritmos.👀
-        </Typography>
-      </Box>
     </Box>
   );
 }
